@@ -16,9 +16,16 @@ function App() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Learn React js
-					<h2>Holla!</h2>
+					Learn React js with docker
+					<br />
+					<br />
 				</a>
+				<div>
+					<h2>Holla!</h2>
+					<h4 style={{ color: "blue", fontSize: "20px" }}>
+						I am learning docker
+					</h4>
+				</div>
 			</header>
 		</div>
 	);
