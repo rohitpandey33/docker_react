@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - 8182:3000
+    volumes:
+      - /usr/app/node_modules
+      - ./:/usr/app
