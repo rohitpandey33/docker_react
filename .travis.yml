@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t rohitpandey33/docker-react:latest -f Dockerfile .
 script:
-  - docker run -e CI=true rohitpandey33/docker_react npm run test
+  - docker run rohitpandey33/docker_react npm run test -- --watchAll=false
