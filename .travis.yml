@@ -6,12 +6,7 @@ before_install:
 script:
   - docker run rohitpandey33/docker_react npm run test -- --watchAll=false
   deploy:
-    # deploy app as api server
     - provider: heroku
       skip_cleanup: true
       api-key: a45343e8-2ef2-44aa-8d44-8817266ddcac
       app: code-editor-api
-
-  # deploy:
-  # provider: heroku
-  # api_key: a45343e8-2ef2-44aa-8d44-8817266ddcac
