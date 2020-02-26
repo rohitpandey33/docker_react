@@ -9,3 +9,4 @@ deploy:
   - provider: heroku
     skip_cleanup: true
     api-key: a45343e8-2ef2-44aa-8d44-8817266ddcac
+    app: rex-learn
