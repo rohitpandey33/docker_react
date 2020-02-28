@@ -32,7 +32,13 @@ const Banner = props => {
 	return (
 		<div className={style.container}>
 			<img src="./banner.jpg" alt="banner" className={style.image} />
-			<Button variant="contained" color="primary" className={style.text}>
+			<Button
+				component="a"
+				href="profile"
+				variant="contained"
+				color="primary"
+				className={style.text}
+			>
 				Click me
 			</Button>
 		</div>
