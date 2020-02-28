@@ -53,7 +53,6 @@ const NavbarMaterial = () => {
 		<div>
 			<AppBar position="static" color="secondary">
 				<Toolbar>
-					{/* <img src="./code.png" className={style.brand} alt="brand icon"></img> */}
 					<IconButton onClick={toggleSidebar}>
 						<MenuIcon></MenuIcon>
 					</IconButton>

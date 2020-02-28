@@ -17,7 +17,7 @@ const useStyle = makeStyles({
 		position: "relative",
 		zIndex: 0
 	},
-	text: {
+	button: {
 		zIndex: "999",
 		marginLeft: "-50%",
 		marginRight: "auto",
@@ -37,32 +37,11 @@ const Banner = props => {
 				href="profile"
 				variant="contained"
 				color="primary"
-				className={style.text}
+				className={style.button}
 			>
-				Click me
+				Visit Profile
 			</Button>
 		</div>
-
-		// <>
-		// 	<Grid container className={style.mainContainer}>
-		// 		<Grid item xs={12}>
-		// 			<img src="./banner.jpg" alt="banner" className={style.image} />
-		// 		</Grid>
-		// 	</Grid>
-		// 	<div calssName={style.text}>
-		// 		<Grid container direction="row" spacing={3}>
-		// 			<Grid col={4}>
-		// 				<Typography variant="h6">Let's Build the world together</Typography>
-		// 			</Grid>
-		// 			<Grid col={4}>
-		// 				<Typography variant="h6">Let's Build the world together</Typography>
-		// 			</Grid>
-		// 			<Grid col={4}>
-		// 				<Typography variant="h6">Let's Build the world together</Typography>
-		// 			</Grid>
-		// 		</Grid>
-		// 	</div>
-		// </>
 	);
 };
 

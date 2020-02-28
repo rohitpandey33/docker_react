@@ -6,8 +6,10 @@ import {
 	ListItemIcon,
 	Link
 } from "@material-ui/core/";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import { makeStyles } from "@material-ui/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+
 import HomeIcon from "@material-ui/icons/Home";
 import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
 import BuildIcon from "@material-ui/icons/Build";
@@ -38,12 +40,20 @@ const Sidebar = props => {
 					onOpen={props.toggleDrawer("left", true)}
 				>
 					<List className={style.list}>
-						<Link href="/home" className={style.link}>
+						<Link href="/" className={style.link}>
 							<ListItem>
 								<ListItemIcon>
 									<HomeIcon />
 								</ListItemIcon>
 								<ListItemText>Home</ListItemText>
+							</ListItem>
+						</Link>
+						<Link href="/projects" className={style.link}>
+							<ListItem>
+								<ListItemIcon>
+									<AccountBoxIcon />
+								</ListItemIcon>
+								<ListItemText>Profile</ListItemText>
 							</ListItem>
 						</Link>
 						<Link href="/projects" className={style.link}>
